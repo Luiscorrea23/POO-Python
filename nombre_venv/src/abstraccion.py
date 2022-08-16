@@ -41,12 +41,16 @@ class Televisor():
         boton_encendido = self._encender()
         canal = self._escoger_canal_numero()
         cambiador = self._cambiar_canal()
-        volumen = self.cambiar_volumen()
+        volumen = self._cambiar_volumen()
 
     
     def _reproducir_canal(self):
         canal_elegido = self._escoger_canal_numero()
         print(f"Mostrando contenido del canal {canal_elegido}")
+
+    def _volumen_estanlecido(self, volumen = 10):
+        self.volumen = volumen
+        print(f"el volumen actual es: {volumen}")
 
 
     
