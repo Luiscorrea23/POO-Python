@@ -1,3 +1,4 @@
+import sys
 import time
 
 #implementación iterativa 
@@ -18,7 +19,7 @@ def factorial_r(n):
     return n * factorial_r(n - 1)
 
 if __name__ == "__main__":
-    n = 200000
+    n = 1000
 
     comienzo = time.time()
     print(factorial(n))
